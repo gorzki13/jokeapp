@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        viewModel.getNewJoke()
         viewModel.joke.observe(this){
             binding.tVcategory.text=it.category
 

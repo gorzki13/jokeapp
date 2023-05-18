@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">jokeapp</string>
     <string name="getJoke">show next joke</string>
-
+    <string name="settings">Settings</string>
 </resources>
