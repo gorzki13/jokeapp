@@ -2,6 +2,7 @@
     <string name="app_name">jokeapp</string>
     <string name="getJoke">show next joke</string>
     <string name="settings">Settings</string>
+    <string name="CheckCategory">Check Category</string>
     <string name="save">save</string>
 
     //Categories

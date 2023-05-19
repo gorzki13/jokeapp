@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent"
-    >
+    android:layout_height="match_parent">
 
 
 
@@ -22,76 +20,24 @@
             android:text="@string/settings"
             android:background="@android:color/system_accent3_200"
             android:textSize="25sp" />
+            <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/CheckCategory"
+            android:background="@android:color/system_accent3_200"
+            android:textSize="25sp" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerCategory"
             android:layout_width="match_parent"
             android:layout_height="50sp"
-            android:background="@android:color/system_accent3_200"
-
+            android:background="@android:color/system_accent1_100"
             />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/chbnsfw"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/nsfw"
-                android:background="@android:color/system_accent3_200"/>
 
-            <CheckBox
-                android:id="@+id/checkbox2"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/religious"
-                android:background="@android:color/system_accent3_200"/>
-
-            <CheckBox
-                android:id="@+id/checkbox3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/political"
-                android:background="@android:color/system_accent3_200"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/checkbox4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/racist"
-                android:background="@android:color/system_accent3_200"/>
-
-            <CheckBox
-                android:id="@+id/checkbox5"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/sexist"
-                android:background="@android:color/system_accent3_200"/>
-
-            <CheckBox
-                android:id="@+id/checkbox6"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/explicit"
-                android:background="@android:color/system_accent3_200"/>
-
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -101,7 +47,7 @@
             >
 
             <Button
-
+                android:id="@+id/bSave"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="@string/save"

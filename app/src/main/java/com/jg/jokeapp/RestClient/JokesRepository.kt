@@ -3,6 +3,7 @@ package com.jg.jokeapp.RestClient
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.jg.jokeapp.Models.Joke
+import com.jg.jokeapp.Settings.Setting
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -29,7 +30,15 @@ class JokesRepository {
     }
 
     fun getSingleJokeFromApi(){
-        val retrofitData= retrofitBuilder.getJoke("Any")
+
+       var path=""
+        if(Setting.category!=""){
+            path=Setting.category
+        }else{
+            path="Any"
+        }
+        Log.e("uri",path)
+        val retrofitData= retrofitBuilder.getJoke(path)
         retrofitData.enqueue(object : Callback<Joke?>{
             override fun onResponse(call: Call<Joke?>, response: Response<Joke?>) {
 
