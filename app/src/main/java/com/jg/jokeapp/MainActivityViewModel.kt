@@ -1,6 +1,5 @@
 package com.jg.jokeapp
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.jg.jokeapp.RestClient.JokesRepository
 

@@ -18,7 +18,7 @@ class JokesRepository {
         return joke
     }
 
-    val retrofitBuilder= Retrofit.Builder()
+    val retrofitBuilder: JokesInterface = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create())
         .baseUrl(ApiUrl.getUrl())
         .build()
